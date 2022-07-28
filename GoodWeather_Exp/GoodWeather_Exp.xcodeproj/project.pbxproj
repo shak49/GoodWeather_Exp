@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6D4682662892EC30007FB56D /* GoodWeather_ExpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4682652892EC30007FB56D /* GoodWeather_ExpApp.swift */; };
-		6D4682682892EC30007FB56D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4682672892EC30007FB56D /* ContentView.swift */; };
+		6D4682682892EC30007FB56D /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4682672892EC30007FB56D /* WeatherView.swift */; };
 		6D46826A2892EC33007FB56D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D4682692892EC33007FB56D /* Assets.xcassets */; };
 		6D46826D2892EC33007FB56D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D46826C2892EC33007FB56D /* Preview Assets.xcassets */; };
 		6D4682752892F78A007FB56D /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4682742892F78A007FB56D /* Weather.swift */; };
@@ -19,12 +19,13 @@
 /* Begin PBXFileReference section */
 		6D4682622892EC30007FB56D /* GoodWeather_Exp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWeather_Exp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D4682652892EC30007FB56D /* GoodWeather_ExpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeather_ExpApp.swift; sourceTree = "<group>"; };
-		6D4682672892EC30007FB56D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6D4682672892EC30007FB56D /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		6D4682692892EC33007FB56D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D46826C2892EC33007FB56D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6D4682742892F78A007FB56D /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		6D4682762892F83A007FB56D /* WeatherAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIService.swift; sourceTree = "<group>"; };
 		6D4682792892FE90007FB56D /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		6D46827B2893059B007FB56D /* GoodWeather-Exp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoodWeather-Exp-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 		6D4682642892EC30007FB56D /* GoodWeather_Exp */ = {
 			isa = PBXGroup;
 			children = (
+				6D46827B2893059B007FB56D /* GoodWeather-Exp-Info.plist */,
 				6D4682762892F83A007FB56D /* WeatherAPIService.swift */,
 				6D4682732892F77F007FB56D /* Models */,
 				6D4682782892FE53007FB56D /* Views */,
@@ -86,8 +88,8 @@
 		6D4682782892FE53007FB56D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6D4682672892EC30007FB56D /* WeatherView.swift */,
 				6D4682792892FE90007FB56D /* WeatherViewModel.swift */,
-				6D4682672892EC30007FB56D /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,7 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D46827A2892FE90007FB56D /* WeatherViewModel.swift in Sources */,
-				6D4682682892EC30007FB56D /* ContentView.swift in Sources */,
+				6D4682682892EC30007FB56D /* WeatherView.swift in Sources */,
 				6D4682752892F78A007FB56D /* Weather.swift in Sources */,
 				6D4682772892F83A007FB56D /* WeatherAPIService.swift in Sources */,
 				6D4682662892EC30007FB56D /* GoodWeather_ExpApp.swift in Sources */,
@@ -298,6 +300,7 @@
 				DEVELOPMENT_TEAM = JTXRWNZ3Q3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GoodWeather-Exp-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -327,6 +330,7 @@
 				DEVELOPMENT_TEAM = JTXRWNZ3Q3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GoodWeather-Exp-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
